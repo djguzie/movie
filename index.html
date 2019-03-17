@@ -10,112 +10,278 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700|Raleway:400,500,600,700,800" rel="stylesheet">
   </head>
   <body>
-    <main>
-      <header>
-        <img src="/images/detectivepikachulogo.png">
-        <div class="hamburger">
-        </div>
-      </header>
-      <section class="hero">
-        <img src="/images/heroimage.png">
-        <h1>In Theaters<br>MAY 10th</h1>
-        <form>
-          <input class="button" type="button" value="GET TICKETS" onclick="window.location.href='https://www.fandango.com/pokemon-detective-pikachu-215720/movie-overview'" />
-        </form>
-      </section>
-      <div id="movie_sections">
-        <section class="trailer">
-          <h2>Trailer</h2>
-          <iframe width="288" height="162" src="https://www.youtube.com/embed/bILE5BEyhdo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>
-        <section class="about">
-          <h2>About</h2>
-          <div class="movie_title">
-            <p>Pokémon Detective Pikachu</p>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#trailer">Trailer</a>
+      <a href="#about">About</a>
+      <a href="#cast_and_crew">Cast & Crew</a>
+      <a href="#tickets">Tickets</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#connect">Connect</a>
+    </div>
+    <div id="main">
+      <div class="hero">
+        <header>
+          <div class="image-center">
+            <img src="/images/detectivepikachulogo.png">
           </div>
-          <div class="details">
-            <p>PG-13<br>121 minutes<br>Action/Adventure, Kids & Family</p>
+          <div class="hamburger">
+            <span style="font-size:40px;cursor:pointer;float:right;clear:right;color:#FEFE24;text-shadow: 0 1px 0 black;" onclick="openNav()">&#9776;</span>
           </div>
-          <p> The story begins when ace private eye Harry Goodman goes mysteriously missing, prompting his 21-year-old son Tim to find out what happened. Aiding in the investigation is Harry’s former Pokémon partner, Detective Pikachu: a hilariously wise-cracking, adorable super-sleuth who is a puzzlement even to himself. Finding that they are uniquely equipped to communicate with one another, Tim and Pikachu join forces on a thrilling adventure to unravel the tangled mystery. Chasing clues together through the neon-lit streets of Ryme City—a sprawling, modern metropolis where humans and Pokémon live side by side in a hyper-realistic live-action world—they encounter a diverse cast of Pokémon characters and uncover a shocking plot that could destroy this peaceful co-existence and threaten the whole Pokémon universe.</p>
-        </section>
-        <section class="cast_and_crew">
-          <h2>Cast & Crew</h2>
-          <div class="cardsview_2"
-            <div class="big_actor_card">
-              <img src="/images/ryanreynolds.png">
-              <div class="actor_name">
-                <p>Ryan Reynolds</p>
+        </header>
+          <h1>In Theaters<br>MAY 10th</h1>
+          <form>
+            <input class="button" type="button" value="GET TICKETS" onclick="window.location.href='https://www.fandango.com/pokemon-detective-pikachu-215720/movie-overview'" />
+          </form>
+      </div>
+        <div class="movie_sections">
+          <section id="trailer">
+            <h2>Trailer</h2>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bILE5BEyhdo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; allowfullscreen;"></iframe>
+          </section>
+          <section id="about">
+            <h2>About</h2>
+            <div class="movie_title">
+              <p>Pokémon Detective Pikachu</p>
+            </div>
+            <div class="details">
+              <p>PG-13<br>121 minutes<br>Action/Adventure, Kids & Family</p>
+            </div>
+            <p> The story begins when ace private eye Harry Goodman goes mysteriously missing, prompting his 21-year-old son Tim to find out what happened. Aiding in the investigation is Harry’s former Pokémon partner, Detective Pikachu: a hilariously wise-cracking, adorable super-sleuth who is a puzzlement even to himself. Finding that they are uniquely equipped to communicate with one another, Tim and Pikachu join forces on a thrilling adventure to unravel the tangled mystery. Chasing clues together through the neon-lit streets of Ryme City—a sprawling, modern metropolis where humans and Pokémon live side by side in a hyper-realistic live-action world—they encounter a diverse cast of Pokémon characters and uncover a shocking plot that could destroy this peaceful co-existence and threaten the whole Pokémon universe.</p>
+          </section>
+          <section id="cast_and_crew">
+            <h2>Cast & Crew</h2>
+            <div class="actors">
+              <div class="big-actor-grid">
+                <div class="big_actor_card">
+                  <img src="/images/ryanreynolds.png">
+                  <div class="actor_name">
+                    <p>Ryan Reynolds</p>
+                  </div>
+                  <div class="role_name">
+                    <p>Detective Pikachu</p>
+                  </div>
+                </div>
+                <div class="big_actor_card">
+                  <img src="/images/justicesmith.png">
+                  <div class="actor_name">
+                    <p>Justice Smith</p>
+                  </div>
+                  <div class="role_name">
+                    <p>Tim Goodman</p>
+                  </div>
+                </div>
+                <div class="big_actor_card">
+                  <img src="/images/kenwatanabe.png">
+                  <div class="actor_name">
+                    <p>Ken Watanabe</p>
+                  </div>
+                  <div class="role_name">
+                    <p>Detective Yoshida</p>
+                  </div>
+                </div>
+                <div class="big_actor_card">
+                  <img src="/images/katherinenewton.png">
+                  <div class="actor_name">
+                    <p>Katherine Newton</p>
+                  </div>
+                  <div class="role_name">
+                    <p>Lucy Stephens</p>
+                  </div>
+                </div>
               </div>
-              <div class="role_name">
-                <p>Detective Pikachu</p>
+              <div class="small-actor-grid">
+                <div class="small_actor_card">
+                  <img src="/images/robletterman.png">
+                  <div class="actor_name">
+                    <p>Rob Letterman</p>
+                  </div>
+                  <div class="role_name">
+                    <p>Director</p>
+                  </div>
+                </div>
+                <div class="small_actor_card">
+                  <img src="/images/maryparent.png">
+                  <div class="actor_name">
+                    <p>Mary Parent</p>
+                  </div>
+                  <div class="role_name">
+                    <p>Producer</p>
+                  </div>
+                </div>
+                <div class="small_actor_card">
+                <img src="/images/derekconnolly.png">
+                <div class="actor_name">
+                  <p>Derek Connolly</p>
+                </div>
+                <div class="role_name">
+                  <p>Screenwriter</p>
+                </div>
               </div>
             </div>
-            <div class="big_actor_card">
-              <img src="/images/justicesmith.png">
-              <div class="actor_name">
-                <p>Justice Smith</p>
+            </div>
+            <h5>SEE MORE CAST & CREW</h5>
+          </section>
+          <section id="tickets">
+            <h2>Tickets</h2>
+            <div class="searchitems">
+              <input class="searchbar" type="text" placeholder="Search by zipcode or city">
+              <input class="button" type="button" value="GO" onclick="window.location.href='https://www.fandango.com/pokemon-detective-pikachu-215720/movie-overview'"/>
+            </div>
+            <div class="datepicker">
+              <div class="datebox">
+                <p class="dayofweek">Wed</p>
+                <p class="date">May<br>8</p>
               </div>
-              <div class="role_name">
-                <p>Tim Goodman</p>
+              <div class="datebox">
+                <p class="dayofweek">Thu</p>
+                <p class="date">May<br>9</p>
+              </div>
+              <div class="datebox">
+                <p class="dayofweek">Fri</p>
+                <p class="date">May<br>10</p>
+              </div>
+              <div class="datebox">
+                <p class="dayofweek">Sat</p>
+                <p class="date">May<br>11</p>
+              </div>
+              <div class="datebox">
+                <p class="dayofweek">Sun</p>
+                <p class="date">May<br>12</p>
+              </div>
+              <div class="datebox">
+                <p class="dayofweek">Mon</p>
+                <p class="date">May<br>13</p>
+              </div>
+              <div class="datebox">
+                <p class="dayofweek">Tue</p>
+                <p class="date">May<br>14</p>
+              </div>
+              <div class="datebox">
+                <p class="dayofweek">Wed</p>
+                <p class="date">May<br>15</p>
+              </div>
+              <div class="datebox">
+                <p class="dayofweek">Thu</p>
+                <p class="date">May<br>16</p>
+              </div>
+              <div class="datebox">
+                <p class="dayofweek">Fri</p>
+                <p class="date">May<br>17</p>
+              </div>
+              <div class="datebox">
+                <p class="dayofweek">Sat</p>
+                <p class="date">May<br>18</p>
+              </div>
+            </div>
+            <div class="movie-entry">
+              <div class="movie-info">
+                <p>Regal Hacienda Crossings <br>Stadium 20 & IMAX</p>
+                <div class="movie-location-info">
+                  <p>5000 Dublin Blvd.<br>
+                    Dublin, CA 94568<br>
+                    3.5 miles away</p>
+                </div>
+              </div>
+              <img class="map-image" src="/images/regaldublin.png" alt="map">
+              <div class="movie-types">
+                <p>IMAX 3D</p>
+                <div class="movie-types-info">
+                  <p>3D Glasses required - Reserved seating - Dolby Digital Sound<br>
+                    Closed Captioning - Accessibility Options</p>
+                </div>
+                <div class="movie-times-grid">
+                  <input class="movie-times-button" type="button" value="12:00pm" onclick="window.location.href='https://www.fandango.com/pokemon-detective-pikachu-215720/movie-overview'"/>
+                  <input class="movie-times-button" type="button" value="12:00pm" onclick="window.location.href='https://www.fandango.com/pokemon-detective-pikachu-215720/movie-overview'"/>
+                  <input class="movie-times-button" type="button" value="12:00pm" onclick="window.location.href='https://www.fandango.com/pokemon-detective-pikachu-215720/movie-overview'"/>
+                  <input class="movie-times-button" type="button" value="12:00pm" onclick="window.location.href='https://www.fandango.com/pokemon-detective-pikachu-215720/movie-overview'"/>
+                  <input class="movie-times-button" type="button" value="12:00pm" onclick="window.location.href='https://www.fandango.com/pokemon-detective-pikachu-215720/movie-overview'"/>
+                  <input class="movie-times-button" type="button" value="12:00pm" onclick="window.location.href='https://www.fandango.com/pokemon-detective-pikachu-215720/movie-overview'"/>
+                </div>
+                <p>IMAX 2D</p>
+                <div class="movie-types-info">
+                  <p>Reserved seating - Dolby Digital Sound<br>
+                    Closed Captioning - Accessibility Options</p>
+                </div>
+                <div class="movie-times-grid">
+                  <input class="movie-times-button" type="button" value="12:00pm" onclick="window.location.href='https://www.fandango.com/pokemon-detective-pikachu-215720/movie-overview'"/>
+                  <input class="movie-times-button" type="button" value="12:00pm" onclick="window.location.href='https://www.fandango.com/pokemon-detective-pikachu-215720/movie-overview'"/>
+                  <input class="movie-times-button" type="button" value="12:00pm" onclick="window.location.href='https://www.fandango.com/pokemon-detective-pikachu-215720/movie-overview'"/>
+                  <input class="movie-times-button" type="button" value="12:00pm" onclick="window.location.href='https://www.fandango.com/pokemon-detective-pikachu-215720/movie-overview'"/>
+                </div>
+                <p>Premium XD</p>
+                <div class="movie-types-info">
+                  <p>Reserved seating - Digital Sound<br>
+                    Closed Captioning - Accessibility Options</p>
+                </div>
+                <div class="movie-times-grid">
+                  <input class="movie-times-button" type="button" value="12:00pm" onclick="window.location.href='https://www.fandango.com/pokemon-detective-pikachu-215720/movie-overview'"/>
+                  <input class="movie-times-button" type="button" value="12:00pm" onclick="window.location.href='https://www.fandango.com/pokemon-detective-pikachu-215720/movie-overview'"/>
+                  <input class="movie-times-button" type="button" value="12:00pm" onclick="window.location.href='https://www.fandango.com/pokemon-detective-pikachu-215720/movie-overview'"/>
+                </div>
+              </div>
+            </div>
+            <div class="movie-entry">
+              <div class="movie-info">
+                <p>Regal Cinemas Crow Canyon 6</p>
+                <div class="movie-location-info">
+                  <p>1603, 2525 San Ramon Valley Blvd<br>
+                    San Ramon, CA 94583<br>
+                    9.5 miles away</p>
+                </div>
+              </div>
+              <img class="map-image" src="/images/regalsanramon.png" alt="map">
+              <div class="movie-types">
+                <p>Standard Definition</p>
+                <div class="movie-types-info">
+                  <p>Dolby SD Sound<br>
+                    Closed Captioning - Accessibility Options</p>
+                </div>
+                <div class="movie-times-grid">
+                  <input class="movie-times-button" type="button" value="12:00pm" onclick="window.location.href='https://www.fandango.com/pokemon-detective-pikachu-215720/movie-overview'"/>
+                  <input class="movie-times-button" type="button" value="12:00pm" onclick="window.location.href='https://www.fandango.com/pokemon-detective-pikachu-215720/movie-overview'"/>
+                  <input class="movie-times-button" type="button" value="12:00pm" onclick="window.location.href='https://www.fandango.com/pokemon-detective-pikachu-215720/movie-overview'"/>
+                  <input class="movie-times-button" type="button" value="12:00pm" onclick="window.location.href='https://www.fandango.com/pokemon-detective-pikachu-215720/movie-overview'"/>
+                  <input class="movie-times-button" type="button" value="12:00pm" onclick="window.location.href='https://www.fandango.com/pokemon-detective-pikachu-215720/movie-overview'"/>
+                  <input class="movie-times-button" type="button" value="12:00pm" onclick="window.location.href='https://www.fandango.com/pokemon-detective-pikachu-215720/movie-overview'"/>
+                </div>
+              </div>
+            </div>
+            <h5> SHOW MORE THEATERS</h5>
+          </section>
+          <section id="reviews">
+            <h2>Reviews</h2>
+            <p> No reviews yet. Check back soon!</p>
+          </section>
+          <section id="connect">
+            <h2>Connect</h2>
+            <p>Excited about Detective Pikachu? Tell us why using <a href="https://www.instagram.com/explore/tags/detectivepikachu/?hl=en">#DetectivePikachu</a> on social media and you could win free tickets to the premiere in Hollywood!</p>
+            <div class="socials">
+              <a href="https://www.facebook.com/detectivepikachumovie/"><img src="/images/facebook.svg"></a>
+              <a href="https://twitter.com/DetPikachuMovie"><img src="/images/twitter.svg"></a>
+              <a href="https://www.instagram.com/DetectivePikachuMovie/"><img src="/images/instagram.svg"></a>
+              <a href="https://www.snapchat.com/#detectivepikachu"><img src="/images/snapchat.svg"></a>
+              <a href="https://www.reddit.com/r/detectivepikachu/"><img src="/images/reddit.svg"></a>
+            </div>
+          </section>
+      </div>
+      <div class="copyright">
+        <p>© 2019 Legendairy & Warner Sisters Entertainment. No rights reserved<br>
+          © 2019 Pokemon</p>
+      </div>
+    </div>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "375px";
+          document.getElementById("main").style.marginRight = "375px";
+          document.body.style.backgroundColor = "rgba(1,1,1,0.4)";
+        }
 
-
-              </div>
-            </div>
-            <div class="big_actor_card">
-              <img src="/images/kenwatanabe.png">
-              <div class="actor_name">
-                <p>Ken Watanabe</p>
-              </div>
-              <div class="role_name">
-                <p>Detective Yoshida</p>
-              </div>
-            </div>
-            <div class="big_actor_card">
-              <img src="/images/katherinenewton.png">
-              <div class="actor_name">
-                <p>Katherine Newton</p>
-              </div>
-              <div class="role_name">
-                <p>Lucy Stephens</p>
-              </div>
-            </div>
-          </div>
-          <div class="cardsview_3">
-            <div class="small_actor_card">
-              <img src="/images/robletterman.png">
-              <div class="actor_name">
-                <p>Rob Letterman</p>
-              </div>
-              <div class="role_name">
-                <p>Director</p>
-              </div>
-            </div>
-            <div class="small_actor_card">
-              <img src="/images/maryparent.png">
-              <div class="actor_name">
-                <p>Mary Parent</p>
-              </div>
-              <div class="role_name">
-                <p>Producer</p>
-              </div>
-            </div>
-            <div class="small_actor_card">
-          </div>
-            <img src="/images/derekconnolly.png">
-            <div class="actor_name">
-              <p>Derek Connolly</p>
-            </div>
-            <div class="role_name">
-              <p>Screenwriter</p>
-            </div>
-          </div>
-          <h5>SEE MORE CAST & CREW</h5>
-        </section>
-        <section class="tickets">
-          <h2>Tickets</h2>
-          <input type="text" placeholder="Search by zipcode or city">
-          <input class="button" type="button" value="GO" onclick="window.location.href='https://www.fandango.com/pokemon-detective-pikachu-215720/movie-overview'" />
-
-    </main>
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginRight= "0";
+          document.body.style.backgroundColor = "black";
+        }
+    </script>
   </body>
 </html>
