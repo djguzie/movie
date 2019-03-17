@@ -250,7 +250,7 @@ header {
   display:grid;
   grid-template-columns: repeat(15,1fr);
   grid-gap: 2px;
-  overflow:scroll;
+  overflow-x:auto;
 }
 
 .dayofweek {
